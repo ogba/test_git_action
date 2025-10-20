@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(test -d \".github/workflows\")",
+      "Bash(python main.py)",
+      "Bash(python -m pytest test_main.py -v)",
+      "Bash(python -m pytest test_main.py --tb=short -q)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -4,7 +4,17 @@ This will be run by GitHub Actions on every push/pull request
 """
 
 import pytest
-from main import add, subtract, multiply, divide, power, modulo, square_root, absolute, main
+from main import (
+    add,
+    subtract,
+    multiply,
+    divide,
+    power,
+    modulo,
+    square_root,
+    absolute,
+    main,
+)
 
 
 class TestAddition:
@@ -160,7 +170,7 @@ class TestPower:
     def test_power_decimal_exponent(self):
         """Test power with decimal exponent"""
         assert power(4, 0.5) == 2.0
-        assert power(27, 1/3) == pytest.approx(3.0)
+        assert power(27, 1 / 3) == pytest.approx(3.0)
 
 
 class TestModulo:
@@ -216,7 +226,9 @@ class TestSquareRoot:
 
     def test_square_root_negative_raises_error(self):
         """Test that square root of negative raises ValueError"""
-        with pytest.raises(ValueError, match="Cannot calculate square root of negative number"):
+        with pytest.raises(
+            ValueError, match="Cannot calculate square root of negative number"
+        ):
             square_root(-4)
 
     def test_square_root_decimal(self):
@@ -254,7 +266,7 @@ class TestMain:
     def test_main_returns_true(self):
         """Test that main function returns True on success"""
         result = main()
-        assert result == True
+        assert result is True
 
     def test_main_executes_without_error(self):
         """Test that main function executes without raising exceptions"""

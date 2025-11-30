@@ -5,20 +5,20 @@ This is for learning GitHub Actions CI/CD
 
 def add(a, b):
     """Add two numbers"""
-    return a + b
+    return a +  b
 
 def subtract(a, b):
     """Subtract b from a"""
-    return a - b
+    return a -   b
 
 def multiply(a, b):
     """Multiply two numbers"""
-    return a * b
+    return a *   b
 
 def divide(a, b):
     """Divide a by b"""
     if b == 0:
-        raise ValueError("Cannot divide by zero")
+        raise ValueError("Cannot divide by zero")k
     return a / b
 
 def power(a, b):
@@ -66,7 +66,7 @@ def main():
 
     # Demonstrate square root
     print(f"Square Root: sqrt(16) = {square_root(16)}")
-
+l
     # Demonstrate absolute value
     print(f"Absolute: |-7| = {absolute(-7)}")
 

@@ -4,7 +4,9 @@
       "Bash(test -d \".github/workflows\")",
       "Bash(python main.py)",
       "Bash(python -m pytest test_main.py -v)",
-      "Bash(python -m pytest test_main.py --tb=short -q)"
+      "Bash(python -m pytest test_main.py --tb=short -q)",
+      "Bash(pip install pytest-cov)",
+      "Bash(pytest test_main.py --cov=main --cov-report=term-missing)"
     ],
     "deny": [],
     "ask": []
